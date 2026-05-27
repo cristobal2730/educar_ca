@@ -1,0 +1,82 @@
+body{
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1{
+    color: #ff4081;
+    font-size: 45px;
+    text-shadow: 2px 2px #ffd54f;
+}
+
+.contenedor{
+    background: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+    border: 5px solid #ffd54f;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+img{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 20px;
+}
+
+#oracion{
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 60%;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 15px;
+    border: 3px solid #4CAF50;
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 22px;
+    border: none;
+    border-radius: 15px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background: #43a047;
+}
+
+#resultado{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#puntaje{
+    margin-top: 15px;
+    font-size: 24px;
+    color: #3949ab;
+}
+
+#repetir{
+    background: linear-gradient(to right, #2196F3, #64B5F6);
+}
+
+#repetir:hover{
+    background: linear-gradient(to right, #1976D2, #42A5F5);
+}

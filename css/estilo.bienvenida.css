@@ -1,0 +1,36 @@
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #d31212, #00f2fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor{
+            background: rgb(93, 182, 10);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(179, 19, 19, 0.651);
+            width: 350px;
+        }
+
+        .contenedor img{
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid #0077ff;
+            object-fit: cover;
+        }
+
+        h1{
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p{
+            color: #666;
+            font-size: 18px;
+        }

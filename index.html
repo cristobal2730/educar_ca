@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Imagen pestaña -->
+    <link rel="icon" href="img/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.index.css">
+
+    <title>Plataforma Educativa</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- Logo -->
+        <img src="img/logo.png" alt="Logo Plataforma" class="logo">
+
+        <h1>Bienvenido</h1>
+
+        <!-- Nombre -->
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+        <!-- Avatares -->
+        <div class="avatars">
+            <img src="img/avatar1.png" onclick="seleccionarAvatar(this)">
+            <img src="img/avatar4.png" onclick="seleccionarAvatar(this)">
+            <img src="img/avatar5.png" onclick="seleccionarAvatar(this)">
+            <img src="img/avatarcpam.png" onclick="seleccionarAvatar(this)">
+        </div>
+
+        <!-- Botón -->
+        <button onclick="ingresar()">Ingresar</button>
+
+    </div>
+
+    <!-- Librería serpentinas -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/script.index.js"></script>
+
+</body>
+</html>

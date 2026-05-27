@@ -1,0 +1,82 @@
+body{
+            font-family: Arial, sans-serif;
+            background: #9e0404;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .contenedor{
+            background: rgb(165, 3, 3);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 400px;
+        }
+
+        .logo{
+            width: 120px;
+            margin-bottom: 15px;
+        }
+
+        h1{
+            color: #333;
+        }
+
+        input{
+            width: 90%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .avatars{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .avatars img{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 3px solid transparent;
+            transition: 0.3s;
+        }
+
+        .avatars img:hover{
+            transform: scale(1.05);
+        }
+
+        .seleccionado{
+            border: 3px solid #0077ff !important;
+        }
+
+        button{
+            background: linear-gradient(135deg, #8a25e9, #7218bb);
+        color: white;
+        border: none;
+        padding: 14px 35px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        button:hover{
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .button-ingresar:active{
+        transform: scale(0.95);
+        }
