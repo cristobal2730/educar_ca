@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Matemática del tesoro</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilo.juegobasico2.css">
+</head>
+<body>
+    <div id="juego">
+
+<h1>🏆 Aventura Matemática del Tesoro 🏆</h1>
+
+<div id="camino">
+    <div id="jugador">🧑‍🚀</div>
+    <div id="tesoro">💰</div>
+</div>
+
+<div id="estadisticas">
+    ⭐ Puntos: <span id="puntos">0</span>
+    | 🪙 Monedas: <span id="monedas">0</span>
+</div>
+
+<div id="pregunta"></div>
+
+<input type="number" id="respuesta">
+
+<br>
+
+<button onclick="comprobar()">Responder</button>
+
+<button onclick="repetirPregunta()">
+🔊 Escuchar otra vez
+</button>
+
+<br><br>
+
+<button onclick="window.location.href='basico4.html'" class="btn-volver">
+⬅ Volver
+</button>
+
+<button onclick="window.location.href='juegobasico3.html'" class="btn-siguiente">
+➡ Siguiente Juego
+</button>
+
+<div id="mensaje"></div>
+
+<div id="mensaje"></div>
+
+</div>
+<script src="js/script.juegobasico2.js"></script>
+</body>
+</html>
