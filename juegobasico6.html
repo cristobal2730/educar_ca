@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matemáticas</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilo.juegobasico6.css">
+</head>
+<body>
+    <div id="contenedor">
+
+    <h1>🏰 Aventura Matemática</h1>
+
+    <div id="vidas">❤️❤️❤️</div>
+
+    <div id="puntaje">⭐ Puntaje: 0</div>
+
+    <div id="operacion">...</div>
+
+    <input type="number" id="respuesta">
+
+    <br>
+
+    <button id="btnResponder" onclick="verificar()">
+    Responder
+</button>
+    <div class="nav-botones">
+
+    <button
+    class="nav-btn atras"
+    onclick="window.location.href='juegobasico5.html'">
+        ⬅ Volver
+    </button>
+
+    <button
+    class="nav-btn siguiente"
+    onclick="window.location.href='bienvenida.html'">
+        Volver al inicio ➡
+    </button>
+
+    <div id="mensaje"></div>
+    <button
+id="btnReiniciar"
+onclick="reiniciarJuego()"
+style="display:none;">
+    🔄 Jugar de Nuevo
+</button>
+
+</div>
+<script src="js/script.juegobasico6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</body>
+</html>
