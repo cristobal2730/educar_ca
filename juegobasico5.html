@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Matemático 🧠</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilo.juegobasico5.css">
+</head>
+<body>
+    <div id="contenedor">
+
+    <div id="juego">
+
+        <h1>🧠 Desafío Matemático</h1>
+
+        <div id="info">
+            <div>⏳ <span id="tiempo">60</span>s</div>
+            <div>⭐ <span id="puntaje">0</span></div>
+        </div>
+
+        <div id="operacion"></div>
+
+        <input
+        type="number"
+        id="respuesta"
+        autocomplete="off">
+
+        <br>
+
+        <button onclick="comprobar()">
+            Responder
+        </button>
+
+        <div id="mensaje"></div>
+
+        <div id="barra">
+            <div id="progreso"></div>
+        </div>
+
+    </div>
+
+    <div id="pantallaFinal">
+
+        <h1>🏆 Tiempo Terminado</h1>
+
+        <div id="resultado"></div>
+
+        <button onclick="reiniciar()">
+            Jugar Nuevamente
+        </button>
+        <button onclick="window.location.href='juegobasico4.html'" class="btn-volver">
+⬅ Volver
+</button>
+
+<button onclick="window.location.href='juegobasico6.html'" class="btn-siguiente">
+➡ Siguiente Juego
+</button>
+
+    </div>
+
+</div>
+<script src="js/script.juegobasico5.js"></script>
+</body>
+</html>
