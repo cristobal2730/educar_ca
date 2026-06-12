@@ -1,90 +1,123 @@
-        body{
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #d31212, #00f2fe);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff4b4b, #00c6ff);
+    min-height: 100vh;
 
-        .contenedor{
-            background: rgb(93, 182, 10);
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(179, 19, 19, 0.651);
-            width: 350px;
-        }
-
-/* Título */
-h1{
-    color: #ff4081;
-    font-size: 50px;
-    text-shadow: 3px 3px #ffd54f;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Imagen */
-img{
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    margin: 20px;
-    transition: transform 0.3s;
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.contenedor{
+    width: 400px;
+    background: white;
+
+    padding: 35px;
+    border-radius: 25px;
+
     text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+    animation: aparecer 0.8s ease;
+}
+
+/* ===== TITULO ===== */
+h1{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #ff4081;
+    font-size: 42px;
+    text-align: left;
+    margin: 0;
+    text-shadow: 2px 2px #ffd54f;
+}
+
+/* ===== IMAGEN ===== */
+img{
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+
+    margin: 20px auto;
+
+    display: block;
+
+    transition: 0.3s;
 }
 
 img:hover{
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.08) rotate(3deg);
 }
 
-/* Botones */
+/* ===== BOTONES ===== */
 button{
-    display: block;
-    width: 85%;
+    width: 90%;
+
     margin: 12px auto;
-    padding: 15px;
+    padding: 14px;
+
+    display: block;
+
     border: none;
     border-radius: 15px;
+
     background: linear-gradient(to right, #4CAF50, #66bb6a);
+
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
+
     cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
 }
 
+/* Hover botones */
 button:hover{
-    transform: scale(1.05);
+    transform: scale(1.04);
+
     background: linear-gradient(to right, #43a047, #81c784);
 }
 
+/* Click botón */
 button:active{
-    transform: scale(0.98);
+    transform: scale(0.97);
 }
 
-
-/* Resultado */
+/* ===== RESULTADO ===== */
 #resultado{
-    font-size: 30px;
     margin-top: 20px;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #333;
+}
+
+/* ===== PUNTAJE ===== */
+#puntaje{
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    background: #e8eaf6;
+    color: #3949ab;
+
+    font-size: 24px;
     font-weight: bold;
 }
 
-/* Puntaje */
-#puntaje{
-    font-size: 26px;
-    color: #3949ab;
-    background: #e8eaf6;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-top: 15px;
-}
-
-/* Botón reiniciar */
+/* ===== BOTÓN REINICIAR ===== */
 #reiniciar{
     background: linear-gradient(to right, #ff9800, #ffb74d);
 }
@@ -93,7 +126,39 @@ button:active{
     background: linear-gradient(to right, #fb8c00, #ffcc80);
 }
 
-/* Animación */
+/* ===== BOTÓN EXTRA ===== */
+.boton-juego{
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 15px 30px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(to right, #ff4081, #ff80ab);
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.boton-juego:hover{
+    transform: scale(1.07);
+
+    background: linear-gradient(to right, #f50057, #ff4081);
+}
+
+.boton-juego:active{
+    transform: scale(0.95);
+}
+
+/* ===== ANIMACIÓN ===== */
 @keyframes aparecer{
     from{
         opacity: 0;
@@ -104,28 +169,4 @@ button:active{
         opacity: 1;
         transform: translateY(0);
     }
-}
-.boton-juego{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 20px;
-    background: linear-gradient(to right, #ff4081, #ff80ab);
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    text-decoration: none;
-}
-
-.boton-juego:hover{
-    transform: scale(1.08) rotate(-2deg);
-    background: linear-gradient(to right, #f50057, #ff4081);
-}
-
-.boton-juego:active{
-    transform: scale(0.95);
 }

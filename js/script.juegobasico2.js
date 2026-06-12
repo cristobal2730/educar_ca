@@ -127,6 +127,7 @@ function comprobar(){
 
         document.getElementById("mensaje").innerHTML =
         "🎉 ¡Correcto! ¡Muy bien!";
+        lanzarConfetti();
 
         document.getElementById("mensaje").className =
         "correcto";
@@ -221,3 +222,29 @@ function comprobar(){
 
 
 generarPregunta();
+function lanzarConfetti(){
+
+    confetti({
+        particleCount: 150,
+        spread: 120,
+        origin:{y:0.6}
+    });
+
+    setTimeout(()=>{
+
+        confetti({
+            particleCount:100,
+            angle:60,
+            spread:80,
+            origin:{x:0}
+        });
+
+        confetti({
+            particleCount:100,
+            angle:120,
+            spread:80,
+            origin:{x:1}
+        });
+
+    },300);
+}

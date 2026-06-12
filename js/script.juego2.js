@@ -2,9 +2,9 @@ const preguntas = [
 
 {
     oracion: 'The cat is ____.',
-    respuesta: 'black',
+    respuesta: 'white',
     imagen: 'https://cdn-icons-png.flaticon.com/512/220/220124.png',
-    voz: 'The cat is black'
+    voz: 'The cat is white'
 },
 
 {
@@ -138,5 +138,4 @@ function repetirOracion(){
     hablar(actual.voz);
 
 }
-
 cargarPregunta();

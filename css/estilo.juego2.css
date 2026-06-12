@@ -73,10 +73,3 @@ button:hover{
     color: #3949ab;
 }
 
-#repetir{
-    background: linear-gradient(to right, #2196F3, #64B5F6);
-}
-
-#repetir:hover{
-    background: linear-gradient(to right, #1976D2, #42A5F5);
-}

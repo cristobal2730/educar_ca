@@ -50,7 +50,7 @@ const preguntas = [
 },
 
 {
-    pregunta: '¿Qué color es el sol?',
+    pregunta: '¿De qué color es el sol?',
     imagen: 'https://cdn-icons-png.flaticon.com/512/869/869869.png',
     opciones: ['Yellow', 'Blue', 'Black', 'Pink'],
     correcta: 'Yellow'

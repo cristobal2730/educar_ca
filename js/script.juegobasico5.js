@@ -94,6 +94,7 @@ function comprobar(){
 
         mensaje.textContent =
         "✅ ¡Correcto!";
+        lanzarConfetti();
 
         mensaje.style.color =
         "green";
@@ -186,3 +187,29 @@ function(e){
 });
 
 nuevaOperacion();
+function lanzarConfetti(){
+
+    confetti({
+        particleCount: 150,
+        spread: 120,
+        origin:{y:0.6}
+    });
+
+    setTimeout(()=>{
+
+        confetti({
+            particleCount:100,
+            angle:60,
+            spread:80,
+            origin:{x:0}
+        });
+
+        confetti({
+            particleCount:100,
+            angle:120,
+            spread:80,
+            origin:{x:1}
+        });
+
+    },300);
+}
